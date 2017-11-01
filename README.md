@@ -13,7 +13,7 @@
 
 # Quick start
 
-bash上で
+シェル上で
 ```bash
     python manage.py migrate
     python manage.py runserver
