@@ -1,0 +1,25 @@
+div.my-container {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+div#conv_layers {
+    margin-bottom: 30px;
+}
+
+span.conv-id {
+    font-weight: 700;
+    margin-right: 20px;
+    width:60px;
+}
+
+span.conv-id-selected {
+    color: blue;
+}
+
+input.input-xmini {
+    width: 50px ;
+    margin-right: 10px;
+}

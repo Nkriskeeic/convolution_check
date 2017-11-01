@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}畳み込みチェッカー{% endblock title %}
+{% block extrahead %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.16.5/math.min.js"></script>
+    <script src="/static/js/d3.v3.min.js"></script>
+    <script src="/static/js/NodeEditor.js"></script>
+    <script src="/static/js/ConvEditor.js?{% now "></script>
+    {% endblock %}
+
+    {% block content %}
+        <h3 class="page-header">畳み込みチェッカー</h3>
+    <div class="row">
+        <div class="col-sm-4">
+            <h4>a kernel sees this area</h4>
+            <div id="node_pane"></div>
+        </div>
+        <div class="col-sm-8">
+            <h4>畳み込み層</h4>
+            <div class="row" id="conv_layers">
+            </div>
+            <script>AddConvolution();</script>
+            <button class="btn btn-info" type="button"
+                    onclick="AddConvolution()">add layer
+            </button>
+            <button class="btn btn-warning" type="button"
+                    onclick="ClearConvolutions()">clear
+            </button>
+            <button class="btn btn-success" type="button"
+                    onclick="Draw()">generate
+            </button>
+        </div>
+    </div>
+{% endblock content %}
