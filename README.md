@@ -1,20 +1,17 @@
-=======================
-convolution checker
-=======================
+# convolution checker
 
 畳み込み層のフィルターが見ている範囲を可視化します．
+
 グラデーションは重みではなく単純に見た回数によって色付けしています(補正をかけています)
 
 
-Requirement
-===========
+# Requirement
 
 :Python: 3.6
 :Django: 1.11
 
 
-Quick start
-===========
+#Quick start
 
 bash上で
 ```bash
